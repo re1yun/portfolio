@@ -2,25 +2,39 @@
   <head>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link href="index.css" rel="stylesheet" type="text/css">
+    <title>Home</title>
   </head>
+  
   <body>
+    <header>
+      <nav class="navbar">
+          <ul class="navbar_menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
     <div class="main-panel">
         <div class="name">
             <h1>Jaeyun<br>LIM</h1>
         </div>
     </div>
-    <div class="menu">
+    <div class="menu" data-aos="fade-up" data-aos-duration="2000">
       <div class="about">
-        <h2>About</h2>
+        <h2><a href="/about">About me</a></h2>
         <p>Hi, I'm Jaeyun Lim. I'm a software engineer based in Seoul, Korea. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
       </div>
-      <div class="resume">
+      <div class="resume" data-aos="fade-up">
         <h2>Resume</h2>
         <p>My resume is available in PDF format.</p>
         <a href="resume.pdf" download>Download Resume</a>
       </div>
-      <div class="projects">
+      <div class="projects" data-aos="fade-up">
         <h2>Projects</h2>
         <p>Here are a few projects I've worked on recently.</p>
         <ul>
@@ -30,13 +44,15 @@
             <li><a href="contact">Contact</a></li>
         </ul>
     </div>
-    <div class="tech-stacks">
+    <div class="tech-stacks" data-aos="fade-up">
       <h2>Tech Stacks</h2>
       <p>Here are a few tech stacks I've worked on recently.</p>
-      <h4>Languages</h4>
-      <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
-      <img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
-      <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
+      <div data-aos="fade-up">
+        <h4>Languages</h4>
+        <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+        <img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+        <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
+      </div>
       <br>
       <h4>Back-end</h4>
       <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
@@ -78,9 +94,12 @@
       <img src="https://img.shields.io/badge/latex-008080?style=for-the-badge&logo=latex&logoColor=white">
       <br>
     </div>
-    <div class="contact">
+    <div class="contact" data-aos="fade-up">
         <h2>Contact</h2>
         <p>Want to get in touch? Contact me on <a href="https://www.linkedin.com/in/jaeyun-lim-9a1a3a1a0/">LinkedIn</a>.</p>
-    </div> 
+    </div>
+    <script>
+      AOS.init();
+    </script> 
   </body>
 </html>
