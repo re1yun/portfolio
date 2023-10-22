@@ -1,92 +1,22 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
-    padding: 0;
-    width: 100vh;
-    height: 100vh;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+    background-color: aqua;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
+    &.is-transparent {
+        background-color: transparent;
+        background-image: none;
+    }
+}
+
+#particles-js {
+    position: absolute;
     width: 100%;
-    height: 5vh;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    z-index: 1;
-}
-
-.navbar_menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar_menu li {
-    padding: 8px 30px;
-}
-
-.main-panel {
-    position: fixed;
-    width:100%;
-    height: 100vh;
-    background-image: url('https://assets.codepen.io/1462889/photo.jpeg');
+    height: 100%;
+    background-color: #20243c;
+    background-image: url("");
+    background-repeat: no-repeat;
     background-size: cover;
-	background-position: center;
-    background-attachment: local;
-    display: block;
-    transform: scale(1);
-    overflow: hidden;
-}
-
-.name {
-    position: absolute;
-    left: 50vh;
-    font-size: 3em;
-    font-weight: 900;
-    color: #fff;
-    text-align: center;
-}
-
-.menu {
-    position: absolute;
-    top: 100%;
-    background-color: #fff;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.resume {
-    background-color: gray;
-    width: 100%;
-}
-
-.projects {
-    background-color: gray;
-    width: 100%;
-}
-
-.tech-stacks {
-    display: block;
-    background-color: gray;
-    width: 100%;
+    background-position: 50% 50%;
 }

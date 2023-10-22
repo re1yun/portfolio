@@ -5,19 +5,27 @@ const __dirname = path.resolve();
 var router = express.Router();
 
 router.get('/', (req, res) => {
-    res.sendFile(__dirname + "/src/views/index.html")
+    res.render('index.ejs', {
+        title: 'Home'
+    });
 });
 
 router.get('/about', (req, res) => {
-    res.sendFile(__dirname + "/src/views/about.html")
+    res.render('index.ejs', {
+        title: 'About'
+    });
 });
 
 router.get('/contact', (req, res) => {
-    res.sendFile(__dirname + "/src/views/contact.html")
+    res.render('index.ejs', {
+        title: 'Contact'
+    });
 });
 
 router.get('/projects', (req, res) => {
-    res.sendFile(__dirname + "/src/views/projects.html")
+    res.render('index.ejs', {
+        title: 'Projects'
+    });
 });
 
 export default router;

@@ -12,5 +12,7 @@ export default async ( app ) => {
         res.status(200).end();
     });
     app.use(express.json());
+    app.set("view engine", "ejs");
+    app.set("views", __dirname + "/src/views");
     app.use('/', express.static(__dirname + '/src/public'));
 };
