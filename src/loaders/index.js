@@ -7,6 +7,6 @@ export default async ( app ) => {
     console.log('Express Initialized');
     await mongoLoader(app);
     console.log('Mongo Initialized');
-    
+
     app.use('/', router);
 }

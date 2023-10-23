@@ -7,7 +7,7 @@ body {
 
 .navbar {
     &.is-transparent {
-        background-color: transparent;
+        background-color: hsl(0 100% 100%/0.4);;
         background-image: none;
     }
 }
@@ -27,4 +27,8 @@ body {
 
 .block:not(:last-child) {
     margin-bottom: 1.5rem;
+}
+
+.container {
+    margin-top: 2vh;
 }
