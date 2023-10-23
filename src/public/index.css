@@ -28,23 +28,3 @@ body {
 .block:not(:last-child) {
     margin-bottom: 1.5rem;
 }
-
-#title {
-    width: 0;
-    overflow: hidden; /* Hide the overflowing text */
-    white-space: nowrap; /* Keep the text on a single line */
-    border-right: .15em solid; /* Text cursor */
-    animation: typing 2s steps(10), blink .5s step-end infinite alternate;
-}
-
-@keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-}
