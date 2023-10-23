@@ -6,25 +6,25 @@ var router = express.Router();
 
 router.get('/', (req, res) => {
     res.render('index.ejs', {
-        title: 'Home'
+        title: 'home'
     });
 });
 
 router.get('/about', (req, res) => {
     res.render('index.ejs', {
-        title: 'About'
+        title: 'about'
     });
 });
 
 router.get('/contact', (req, res) => {
     res.render('index.ejs', {
-        title: 'Contact'
+        title: 'contact'
     });
 });
 
 router.get('/projects', (req, res) => {
     res.render('index.ejs', {
-        title: 'Projects'
+        title: 'projects'
     });
 });
 
