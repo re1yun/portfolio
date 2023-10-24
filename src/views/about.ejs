@@ -1,32 +1,42 @@
 <!-- src/views/about.ejs -->
 
-<section class="hero is-fullheight">
+<section class="hero is-fullheight is-family-sans-serif">
     <div class="hero-head"></div>
     <div class="hero-body has-background-white">
         <div class="container is-large">
             <div id="name" class="content has-text-white has-text-centered">
-                <p class="title is-1">Jaeyun Lim</p>
+                <p class="title is-1">About Me</p>
             </div>
             <div class="columns">
                 <div class="column is-half">
-                    <div id="profile" class="content">
-                        <p class="subtitle is-3">Profile</p>
-                        <p>
+                    <div class="content mr-6">
+                        <p class="subtitle is-3 mb-2 has-background-grey-lighter" id="profile">Profile</p>
+                        <p class="mb-1">
+                            <span class="icon">
+                                <i class="fa-solid fa-signature"></i>
+                            </span>
+                            I am: <strong>Jaeyun(Ted) Lim</strong></p>
+                        <p class="mb-1">
                             <span class="icon">
                                 <i class="fa-solid fa-globe"></i>
                             </span>
                             PoB: South Korea</p>
                         <p>
-                            <span class="icon">
+                            <span class="icon mt-0">
                                 <i class="fa-solid fa-baby"></i>
                             </span>
                             DoB: 01.30.1998
                         </p>
                     </div>
-                    <div id="school" class="content">
-                        <p class="subtitle is-3">Education</p>
-                        <p>Kyungpook National University</p>
-                        <ul>
+                    <br>
+                    <div class="content">
+                        <p class="subtitle is-3 mb-2 has-background-grey-lighter" id="school">Education</p>
+                        <p>
+                            <span class="icon">
+                                <i class="fa-solid fa-school"></i>
+                            </span>
+                            Kyungpook National University 🇰🇷</p>
+                        <ul class="mt-1">
                             <li>Major: Computer Science and Engineering</li>
                             <ul>
                                 <li>GPA: 4.02/4.5</li>
@@ -41,25 +51,13 @@
                                 </ul>
                             </li>
                         </ul>
-                        <p>International School of Eindhoven</p>
+                        <p>
+                            <span class="icon">
+                                <i class="fa-solid fa-school"></i>
+                            </span>
+                            International School of Eindhoven 🇳🇱</p>
                         <ul>
                             <li>International Baccalaurate</li>
-                        </ul>
-                    </div>
-                    <div id="activity" class="content">
-                        <p class="subtitle is-3">Activity</p>
-                        <ul>
-                            <li>Kyungpook National University Buddy Program (2021.03.01 ~ 2021.07.01.)</li>
-                            <li>Kyungpook National University Data Structure Tutor (2021.09.01. ~ Present)</li>
-                            <li>Kyungpook National University Student Ambassador (2022.01.01 ~ 2022.06.01)</li>
-                            <li>Korean American Friendship Circle (2022.02 ~ 2023.06)</li>
-                        </ul>
-                    </div>
-                    <div id="prize" class="content">
-                        <p class="subtitle is-3">Prize</p>
-                        <ul>
-                            <li>Kyungpook National University SW Hackerton (2021)</li>
-                            <li>KAFC Student Ambassador Award (2023)</li>
                         </ul>
                     </div>
                 </div>
@@ -71,13 +69,55 @@
             </div>
             
             
-            <div id="experience" class="content">
-                <p class="subtitle is-3">Experience</p>
+            <div class="content">
+                <p class="subtitle is-3 mb-2 has-background-grey-lighter" id="activity" >Activity</p>
+                <ul>
+                    <li><a href="https://ik.imagekit.io/re1yun/buddy.pdf?updatedAt=1698150031326">Kyungpook National University Buddy Program (2021.03.01 ~ 2021.07.01.)
+                        <span class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a></li>
+                    <li>Kyungpook National University Data Structure Tutor (2021.09.01. ~ Present)</li>
+                    <li>
+                        <a href="https://ik.imagekit.io/re1yun/Scan%202.jpeg?updatedAt=1698145398019" target="_blank">Kyungpook National University Student Ambassador (2021.09.01 ~ 2021.12.01)
+                            <span class="icon">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>Korean American Friendship Circle (2022.02 ~ 2023.06)</li>
+                </ul>
+            </div>
+            <div class="content">
+                <p class="subtitle is-3 mb-2 has-background-grey-lighter" id="prize">Prize</p>
+                <ul>
+                    <li><a href="https://ik.imagekit.io/re1yun/Scan%201.jpeg?updatedAt=1698145398015" target="_blank">Kyungpook National University SW Hackerton (2021)
+                        <span class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a></li>
+                    <li><a href="https://ik.imagekit.io/re1yun/Scan.jpeg?updatedAt=1698145397973" target="_blank">KAFC Student Ambassador Award (2023)
+                        <span class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <p class="subtitle is-3 mb-2 has-background-grey-lighter" id="experience">Experience</p>
                 <ul>
                     <li>10k1m Internship</li>
-                    <li>LG Soft India Internship</li>
+                    <li><a href="https://ik.imagekit.io/re1yun/Scan%203.jpeg?updatedAt=1698145397985" target="_blank">LG Soft India Internship
+                        <span class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a></li>
                     <li>Data Structure Tutor</li>
-                    <li>KATUSA</li>
+                    <li><a href="https://ik.imagekit.io/re1yun/Senior%20Katusa%20Appointment.pdf?updatedAt=1698149806885" target="_black">KATUSA
+                        <span class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a></li>
                 </ul>
             </div>
             <div class="content">

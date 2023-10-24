@@ -105,9 +105,4 @@ router.get('/projects/project/:pname', async (req, res) => {
     });
 });
 
-router.get('/download/:root', (req, res) => {
-    const file = `${__dirname}/src/public/${req.params.root}.pdf`;
-    res.download(file); // Set disposition and send it.
-});
-
 export default router;
