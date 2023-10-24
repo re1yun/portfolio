@@ -28,7 +28,7 @@ jobs:
             options:
               env:
                 - name: MONGO_URL
-                  value: mongodb+srv://admin:DAxLf5bgI9z0PN0y@cluster0.qzsapze.mongodb.net/?retryWrites=true&w=majority
+                  value: mongodb+srv://admin:DAxLf5bgI9z0PN0y@cluster0.qzsapze.mongodb.net/portfolio?retryWrites=true&w=majority
               ports: 3000
               start: npm run start
               install: npm ci
