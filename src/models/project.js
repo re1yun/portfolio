@@ -4,17 +4,19 @@ import mongoose from 'mongoose';
 
 const projectSchema = new mongoose.Schema({
     name: String,
+    img: String,
     description: String,
-    repository: String,
     startDate: Date,
     endDate: Date,
-    team: [String],
-    tasks: [{
-        name: String,
-        description: String,
-        startDate: Date,
-        endDate: Date,
-        status: String,
-        assignee: String
-    }]
+    team: Number,
+    skillStacks: [{type: String, default: []}],
+    assignedTasks: [String],
+    repo: String,
+    link: String,
+},{
+    collection: 'projects'
 });
+
+const Project = mongoose.model('Project', projectSchema);
+
+export default Project;

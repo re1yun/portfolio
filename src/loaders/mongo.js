@@ -1,5 +1,5 @@
 // src/loaders/mongo.js
-import * as mongoose from 'mongoose';
+import mongoose from 'mongoose';
 import Dotenv from 'dotenv';
 Dotenv.config();
 
