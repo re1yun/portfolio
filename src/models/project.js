@@ -2,6 +2,17 @@
 
 import mongoose from 'mongoose';
 
+const skillSchema = new mongoose.Schema({
+    frontEnd: [String],
+    backEnd: [String],
+    dataBase: [String],
+    deploy: [String],
+    os: [String],
+    ide: [String],
+    tools: [String],
+    language: [String],
+});
+
 const projectSchema = new mongoose.Schema({
     name: String,
     img: String,
@@ -9,7 +20,7 @@ const projectSchema = new mongoose.Schema({
     startDate: Date,
     endDate: Date,
     team: Number,
-    skillStacks: [{type: String, default: []}],
+    skillStacks: skillSchema,
     assignedTasks: [String],
     repo: String,
     link: String,
