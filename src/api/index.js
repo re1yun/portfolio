@@ -31,7 +31,7 @@ router.get('/projects', (req, res) => {
 
 router.get('/projects/project/:pname', async (req, res) => {
     const project = await Project.findOne({name: req.params.pname});
-    console.log(req.params.pname);
+    console.log(project);
     res.render('index.ejs', {
         title: 'project',
         project_title: project.name,
