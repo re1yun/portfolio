@@ -12,7 +12,7 @@ async function startServer() {
             console.log(err);
             return;
         }
-        console.log('server running on http://localhost:3000!');
+        console.log('server is running!');
     });
 }
 

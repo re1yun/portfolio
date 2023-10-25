@@ -69,20 +69,21 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
+
     // function to load charts
     var langData = {
       labels: ['C++', 'C', 'Python', 'Java', 'Kotlin'],
       datasets: [{
           data: [80, 80, 70, 65, 60],
           backgroundColor: [
-              'rgba(173, 216, 230, 0.5)',
+              'rgba(0, 89, 156, 0.5)',
               'rgba(54, 162, 235, 0.5)',
               'rgba(255, 206, 86, 0.5)',
               'rgba(255, 165, 0, 0.5)',
               'rgba(128, 0, 128, 0.5)'
           ],
           borderColor: [
-            'rgba(173, 216, 230, 1)',
+            'rgba(0, 89, 156, 1)',
             'rgba(54, 162, 235, 1)',
             'rgba(255, 206, 86, 1)',
             'rgba(255, 165, 0, 1)',
@@ -135,6 +136,10 @@ document.addEventListener('DOMContentLoaded', function() {
           datalabels: {
               formatter: (value, ctx) => {
                   return ctx.chart.data.labels[ctx.dataIndex];
+              },
+              font:{
+                weight: 'bold',
+                size: 15
               },
               color: '#000',
           }
