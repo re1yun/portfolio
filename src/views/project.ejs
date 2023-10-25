@@ -11,18 +11,18 @@
                         <img src="<%= img %>">
                     </figure>
                     <div class="content">
-                        <p id="description" class="subtitle is-5 mb-1 has-background-grey-lighter">Description:</p>
+                        <p id="description" class="subtitle is-5 mb-1 is-underlined">Description:</p>
                         <ul>
                             <li> <%= description %></li>
                         </ul>
                         
-                        <p id="duration" class="subtitle is-5 mb-1 has-background-grey-lighter">Duration:</p>
+                        <p id="duration" class="subtitle is-5 mb-1 is-underlined">Duration:</p>
                         <ul><li><%= moment(startDate).format('YYYY-MM') %> ~ <%= moment(endDate).format('YYYY-MM') %></li></ul>
 
-                        <p id="team" class="subtitle is-5 mb-1 has-background-grey-lighter">Team:</p>
+                        <p id="team" class="subtitle is-5 mb-1 is-underlined">Team:</p>
                         <ul><li><%= team %></li></ul>
                         
-                        <p id="skillStacks" class="subtitle is-5 mb-1 has-background-grey-lighter">Skill Stacks:</p>
+                        <p id="skillStacks" class="subtitle is-5 mb-1 is-underlined">Skill Stacks:</p>
                         <ul>
                             <% for(var i = 0; i < skillStacks.length; i++) { %>
                                 <li class="mb-1"><p class="is-italic"> <%= skillStacks[i][0] %></p></li>
@@ -30,7 +30,7 @@
                                 <img src= <%= skillStacks[i][1][j] %> height="37">
                             <% }} %>
                         </ul>
-                        <p id="assignedTasks" class="subtitle is-5 mb-1 has-background-grey-lighter">Assigned Tasks:</p>
+                        <p id="assignedTasks" class="subtitle is-5 mb-1 is-underlined">Assigned Tasks:</p>
                         <ul><li><%= assignedTasks %></li></ul>
                     </div>
                 </section>

@@ -26,43 +26,6 @@ body {
     z-index: -1;
 }
 
-
-#profile, #school {
-    margin-right: 13rem;
-}
-
-#activity {
-    margin-right: 39rem;
-}
-
-#prize {
-    margin-right: 41rem;
-}
-
-#experience {
-    margin-right: 36rem;
-}
-
-#description {
-    margin-right: 30.5rem;
-}
-
-#duration {
-    margin-right: 32.3rem;
-}
-
-#team {
-    margin-right: 34rem;
-}
-
-#skillStacks {
-    margin-right: 30.5rem;
-}
-
-#assignedTasks {
-    margin-right: 28rem;
-}
-
 .block:not(:last-child) {
     margin-bottom: 1.5rem;
 }
@@ -76,5 +39,6 @@ body {
 }
 
 .container.is-large {
-    max-width: 60%;
+    max-width: 60% !important;
 }
+
