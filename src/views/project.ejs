@@ -1,5 +1,5 @@
-<div class="container">
-    <div id="image-modal" class="modal is-active">
+<div class="container" id="modal-container">
+    <div id="modal" class="modal is-active">
         <div class="modal-background"></div>
         <div class="modal-content">
             <div class="modal-card">
@@ -34,7 +34,7 @@
                         <ul><li><%= assignedTasks %></li></ul>
                     </div>
                 </section>
-                <footer class="modal-card-foot">
+                <footer class="modal-card-foot pt-1 pb-1">
                     <a href="<%= repo %>" target="_blank">
                         <span class="icon is-large">
                             <i class="fa-brands fa-github fa-beat fa-2xl"></i>
@@ -50,6 +50,15 @@
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
+    <%- include('projects.ejs') %>
 </div>
 
-<%- include('projects.ejs') %>
+
+<script>
+    const modal = document.querySelector('#modal');
+    const hero = document.querySelector('#modal-container');
+    
+    if (modal.classList.contains('is-active')) {
+      hero.classList.add('is-clipped');
+    }
+</script>

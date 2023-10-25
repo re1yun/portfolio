@@ -67,19 +67,14 @@ router.get('/projects', (req, res) => {
 
 router.get('/projects/project/:pname', async (req, res) => {
     const project = await Project.findOne({name: req.params.pname});
-    console.log(project.skillStacks);
     var skillStacks = [];
     for(var key in area){
         var temp = [];
-        console.log("looking for: " + area[key]);
         for(var j in project.skillStacks[area[key]]){
-            console.log("looking for: " + project.skillStacks[area[key]][j]);
             if(myDictionary[project.skillStacks[area[key]][j]]){
-                console.log("found: " + project.skillStacks[area[key]][j]);
                 temp.push(myDictionary[project.skillStacks[area[key]][j]]);
             }
             else{
-                console.log("not found: " + project.skillStacks[area[key]][j]);
                 continue;
             }
         }
@@ -87,7 +82,6 @@ router.get('/projects/project/:pname', async (req, res) => {
             skillStacks.push([areaName[key], temp]);
         }
     }
-    console.log(skillStacks);
 
     res.render('index.ejs', {
         title: 'project',
