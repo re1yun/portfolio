@@ -1,58 +1,39 @@
-# Project Name
-Portfolio Project
+# Portfolio Project
 
-## requirement
-node v18.18.2
+## Description
+Personal portfolio webpage project
+
+## Table of Contents
+- [Requirement](#requirement)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Badges](#badges)
+- [License](#license)
+
+## Requirement
+- node: v18.18.2
+- rest: refer to package.json
 
 ## Installation
-git clone https://github.com/re1yun/portfolio.git
-npm run install
-npm run start
+```console
+$ git clone https://github.com/re1yun/portfolio.git
+$ npm run install
+$ npm run start
+```
 
 ## Usage
+Direct to portfolio: [link](https://port-0-portfolio-6g2llft2yyfl.sel3.cloudtype.app)
 
-Describe how to use your project.
-
-## Contributing
-
-Explain how others can contribute to your project.
+## Badges
+- front end  
+[![HTML](https://img.shields.io/badge/-HTML-orange?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+[![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
+[![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=javascript&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+- back end  
+[![Node.js](https://img.shields.io/badge/-Node.js-green?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)  
+[![Express.js](https://img.shields.io/badge/-Express.js-lightgrey?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)  
+- database  
+[![MongoDB](https://img.shields.io/badge/-MongoDB-green?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/)  
 
 ## License
-
-Include information about the license for your project.
-
-## Todo
-- Apply Bulma CSS
-- Set background using particlesjs
-- Set Router on Nodejs
-- Apply code splitting on html files -> adopt ejs
-- Set Navbar
-    - make navbar transparent
-    - write JS function for navbar burgers to work
-    - make 'resume' button to download resume file
-- Create about page
-    - Insert Picture
-    - Type general 'about' info
-    - change design
-- Create projects page
-    - Create folder(?) for each project
-    - have own page for each proejct
-    - get data from database
-    - have images and available resources on web
-- Create contact page
-    - add link to github & linkedin profile
-    - add personal mail address
-    - if available, create form for contact
-- Connect to mongodb
-    - collection: projects
-        - project:
-            - name: string
-            - thumbnail: image
-            - description: string
-            - startDate: date
-            - endDate: date
-            - team: int
-            - skillStacks: [string]
-            - assigned tasks: string
-            - repo: url
-            - link: url
+[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
