@@ -6,7 +6,7 @@ Personal portfolio webpage project
 ## Table of Contents
 - [Requirement](#requirement)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Feature](#feature)
 - [Badges](#badges)
 - [License](#license)
 
@@ -21,7 +21,9 @@ $ npm run install
 $ npm run start
 ```
 
-## Usage
+## Feature
+Applied github actions for deployment via Cloudtype.
+Used Bulma CSS & particlesJS.
 Direct to portfolio: [link](https://port-0-portfolio-6g2llft2yyfl.sel3.cloudtype.app)
 
 ## Badges
