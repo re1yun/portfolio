@@ -23,8 +23,11 @@ $ npm run start
 
 ## Feature
 Applied github actions for deployment via Cloudtype.
-Used Bulma CSS & particlesJS.
-Direct to portfolio: [link](https://port-0-portfolio-6g2llft2yyfl.sel3.cloudtype.app)
+Applied Bulma CSS & particlesJS library.
+Applied code splitting on html using ejs.
+Load image, certifications and pdf from Database.
+Load project information from Database.
+Direct link to portfolio: [link](https://port-0-portfolio-6g2llft2yyfl.sel3.cloudtype.app)
 
 ## Badges
 - front end  
