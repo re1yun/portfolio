@@ -22,7 +22,7 @@ $ npm run start
 ```
 
 ## Feature
-Applied github actions for deployment via Cloudtype.
+Applied github actions for continuous deployment via Cloudtype.
 Applied Bulma CSS & particlesJS library.
 Applied code splitting on html using ejs.
 Load image, certifications and pdf from Database.
