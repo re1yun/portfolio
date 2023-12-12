@@ -2,13 +2,13 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    
+
     line-height: 1;
     overflow-x: hidden;
 }
 
 .navbar {
-    background-color: hsl(0 100% 100%/0.4);;
+    background-color: hsl(0 100% 100%/0.4);
     background-image: none;
     height: 50px; /* set a fixed height */
 }
@@ -48,7 +48,8 @@ body {
     max-width: 80% !important;
 }
 
-.modal-card, .modal-content {
+.modal-card,
+.modal-content {
     margin: 0 20px;
     max-height: calc(100vh - 160px);
     overflow: auto;
@@ -58,12 +59,11 @@ body {
 }
 
 /*modal breakpoint*/
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
     .modal-card,
     .modal-content {
         margin: 0 auto;
         max-height: calc(100vh - 40px);
-        width: 640px
+        width: 640px;
     }
 }
-
