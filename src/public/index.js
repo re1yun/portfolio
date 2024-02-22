@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // function to load charts
     var langData = {
-        labels: ["C++", "C", "Python", "Java", "Kotlin"],
+        labels: ["C++", "C", "Java(Type)Script", "Python", "Java"],
         datasets: [
             {
                 data: [80, 80, 70, 65, 60],
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     var frameData = {
-        labels: ["NodeJS", "ExpressJS", "MongoDB", "Firebase", "AWS EC2"],
+        labels: ["NodeJS", "NestJS", "MongoDB", "AWS EC2", "MYSQL"],
         datasets: [
             {
                 data: [90, 90, 90, 50, 70],
